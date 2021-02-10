@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta Mostrador</title>
+    <link rel="stylesheet" href="CSS/pospos.css">
+    <script src="index.js"></script>
+</head>
+<body onload="">
+    <form action="">
+        <!-- VENTA MOSTRADOR -->
+        <H1 class="ventamos" >Venta Mostrador</H1>
+        <label class="ventamos" for="cliente">Cliente</label>
+        <input class="campoformulario ventamos" type="text" name="cliente" id="cliente" placeholder="Ingrese codigo de cliente">
+        <span class="iconos">&#xE062;</span>
+        <button class="botones" id='newcli'>Nuevo Cliente</button>
+        <br>
+        <p class="noeditabledata">Nombre del cliente</p>
+        
+        <label class="ventamos" for="doctor">Doctor</label>
+        <input class="campoformulario ventamos" type="text" name="doctor" id="doctor" placeholder="Ingrese nombre del doctor solicitante">
+        <br>
+        <label class="ventamos" for="obs">Observaciones</label>
+        <textarea class="campoformulario ventamos" rows="3" name="obs" placeholder="Observaciones adicionales" data-size="medium" style="width: 50%;"></textarea>
+		<br>
+        <input type="submit" value="Confirmar" class="botones">
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <H1 class="altacli">Alta de Cliente</H1><br>
+        <label class="altacli" for="nombre">Nombre</label>
+        <input class="campoformulario altacli" type="text" name="nombre" id="nombre" placeholder="Ingrese nombre del cliente">
+        <br>
+        <label class="altacli" for="apellido">Apellido</label>
+        <input class="campoformulario altacli" type="text" name="apellido" id="apellido" placeholder="Ingrese apellido del cliente" >
+        <br>
+        <label class="altacli" for="email">E-Mail</label>
+        <input class="campoformulario altacli" type="email" name="email" id="email" placeholder="Ingrese email del cliente">
+        
+        </div>
+  
+        </div>
+    </form>
+</body>
+</html>
